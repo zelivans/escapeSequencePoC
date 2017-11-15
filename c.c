@@ -1,4 +1,5 @@
 #include <fcntl.h>
+#include <string.h>
 
 /* 
  * Twistlock print hack
@@ -21,7 +22,7 @@
 
 int main()
 {
-        const char twistlock[] = CLEARSCREEN COLORFORMAT TWISTLOCK1 ENDFORMAT;
+        const char twistlock[] = CLEARSCREEN COLORFORMAT TWISTLOCK ENDFORMAT;
         char next[71] = {0};
 
         for (int i = 0; i < sizeof(twistlock); i+=70)
